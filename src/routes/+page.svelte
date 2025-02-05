@@ -1,11 +1,5 @@
 <script>
-  import Faq from '$lib/Faq.svelte'
-  import HomeHero from '$lib/HomeHero.svelte'
-  import PricingPlans from '$lib/PricingPlans.svelte'
-  import Mission from '$lib/Mission.svelte'
-  import DontCall from '$lib/DontCall.svelte'
-  import Spacer from '$lib/Spacer.svelte'
-  import ClientsBanner from '$lib/ClientsBanner.svelte'
+  import Widget from '$lib/Widget.svelte'
 </script>
 
 <svelte:head>
@@ -19,26 +13,4 @@
   <link rel="canonical" href="https://tinyteeth.xyz/" />
 </svelte:head>
 
-<HomeHero />
-
-<Spacer />
-
-<Mission />
-
-<Spacer />
-
-<PricingPlans />
-
-<Spacer />
-
-<DontCall />
-
-<Spacer />
-
-<Faq />
-
-<Spacer />
-
-<ClientsBanner />
-
-<Spacer />
+<Widget />

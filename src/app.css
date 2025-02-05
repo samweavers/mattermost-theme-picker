@@ -118,7 +118,7 @@ h3,
 
 p,
 .p {
-  @apply text-lg lg:text-2xl max-w-[850px];
+  @apply text-base lg:text-base max-w-[850px];
 }
 
 .btn {
