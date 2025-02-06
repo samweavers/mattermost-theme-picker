@@ -11,8 +11,6 @@
     textarea.select()
     document.execCommand('copy')
   }
-
-  $: console.log('colorTest:', $colors)
 </script>
 
 <header class="color-picker w-full">
@@ -32,9 +30,6 @@
         />
       </div>
     {/each}
-    <textarea name="" id="">
-      {JSON.stringify($colors)}
-    </textarea>
   </nav>
 </header>
 

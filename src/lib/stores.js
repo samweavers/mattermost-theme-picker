@@ -7,7 +7,7 @@ export const colors = writable({
   centerChannelBg: '#203038',
   centerChannelColor: '#ffffff',
   codeTheme: 'basecamp',
-  dndIndicator: '#d1a317',
+  dndIndicator: '#ff0000',
   errorTextColor: '#f74344',
   linkColor: '#d1a317',
   mentionBg: '#1c58d9',
@@ -22,8 +22,8 @@ export const colors = writable({
   sidebarHeaderTextColor: '#ffffff',
   sidebarTeamBarBg: '#141f23',
   sidebarText: '#ffffff',
-  sidebarTextActiveBorder: '#1bba56',
+  sidebarTextActiveBorder: '#32CD32',
   sidebarTextActiveColor: '#1bba56',
   sidebarTextHoverBg: '#d1a317',
-  sidebarUnreadText: '#ffffff'
+  sidebarUnreadText: '#32CD32'
 })
