@@ -1,0 +1,28 @@
+{
+  "codeTheme": "basecamp",
+  "centerChannelBg": "#203038",
+  "centerChannelColor": "#ffffff",
+  "sidebarBg": "#141f23",
+  "sidebarText": "#ffffff",
+  "sidebarTextHoverBg": "#d1a317",
+  "sidebarUnreadText": "#ffffff",
+  "sidebarTeamBarBg": "#141f23",
+  "sidebarHeaderBg": "#141f23",
+  "sidebarHeaderTextColor": "#ffffff",
+  "sidebarTextActiveBorder": "#1bba56",
+  "sidebarTextActiveColor": "#1bba56",
+  "mentionBg": "#1c58d9",
+  "mentionColor": "#ffffff",
+  "mentionHighlightBg": "#32CD32",
+  "mentionHighlightLink": "#32CD32",
+  "buttonBg": "#d1a317",
+  "buttonColor": "#ffffff",
+  "newMessageSeparator": "#d1a317",
+  "onlineIndicator": "#1bba56",
+  "awayIndicator": "#e0b333",
+  "dndIndicator": "#d1a317",
+  "linkColor": "#d1a317",
+  "errorTextColor": "#f74344"
+}
+
+// LIME GREEN #32CD32

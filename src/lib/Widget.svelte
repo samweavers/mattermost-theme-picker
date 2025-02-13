@@ -2,6 +2,8 @@
   import { colors } from '$lib/stores.js'
 </script>
 
+<div class="right">
+
 <div class="container-main">
   <div class="top-bar">
     <div class="os-window-items">
@@ -128,24 +130,24 @@
         Company Name
       </div>
       <div
-        style="opacity:0.5;background:{$colors.sidebarText};"
-        class="px-4 py-1 rounded"
+        style="background-color:{$colors.sidebarText}20;"
+        class="px-4 mr-4 py-1 rounded"
       >
-        Find Channel
+    Find Channel
       </div>
       <div class="sidebar-container">
         <span class="sidebar-container-header"> Favorites </span>
         <div class="sidebar-container-subcontainer">
           <span
-            style="border-color: {$colors.sidebarTextActiveBorder}; background"
+            style="border-color: {$colors.sidebarTextActiveBorder}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}; background: {$colors.sidebarTextActiveColor}"
             class="sidebar-container-subcontainer-item">Town Square</span
           >
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg};"
             class="sidebar-container-subcontainer-item">item two</span
           >
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item three</span
           >
         </div>
@@ -154,15 +156,15 @@
         <span class="sidebar-container-header"> Notifications </span>
         <div class="sidebar-container-subcontainer">
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item one</span
           >
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item two</span
           >
           <span
-            style="border-color: {$colors.sidebarBg};"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item"
             ><span
               class="sidebar-unread"
@@ -177,15 +179,15 @@
         <span class="sidebar-container-header">Projects</span>
         <div class="sidebar-container-subcontainer">
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item one</span
           >
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item two</span
           >
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item three</span
           >
         </div>
@@ -194,18 +196,27 @@
         <span class="sidebar-container-header">Teams</span>
         <div class="sidebar-container-subcontainer">
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item one</span
           >
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item two</span
           >
           <span
-            style="border-color: {$colors.sidebarBg}"
+            style="border-color: {$colors.sidebarBg}; --hover-bg: {$colors.sidebarTextHoverBg}; --hover-active-border: {$colors.sidebarTextHoverBg}"
             class="sidebar-container-subcontainer-item">item three</span
           >
         </div>
+      </div>
+      <div
+        class="mention-callout py-2 w-full flex items-center rounded-md absolute max-w-[145px] bottom-5 left-2"
+        style="background-color: {$colors.mentionBg};"
+      >
+        <span
+          class="mention-text font-bold text-center mx-auto"
+          style="color: {$colors.mentionColor}">More unreads</span
+        >
       </div>
     </div>
     <div
@@ -214,6 +225,12 @@
     >
       <div class="center-channel-header">
         <span class="font-bold">Town Square</span>
+        <div
+          class="px-3 py-2 rounded"
+          style="background: {$colors.buttonBg}; color:{$colors.buttonColor}"
+        >
+          Button
+        </div>
       </div>
       <div
         class="center-channel-main"
@@ -350,7 +367,11 @@
             ></div>
             <div class="message-content">
               <span class="message-sender"> Jackson </span>
-              <span class="message-text">Cool, see you guys then!</span>
+              <span class="message-text"
+                >Cool, see you guys then! Here's the <span
+                  style="color: {$colors.linkColor}">link</span
+                > to their menu</span
+              >
             </div>
           </div>
         </div>
@@ -362,14 +383,19 @@
   </div>
 </div>
 
-<textarea name="" id="">
-  {JSON.stringify($colors)}
-</textarea>
+<div class="copy-theme">
+  <h2 class="text-2xl bg-slate-900 text-white rounded-lg p-8 shadow-lg z-10">
+    Copy your theme
+  </h2>
+  <textarea name="" id="">
+    {JSON.stringify($colors)}
+  </textarea>
+</div>
 
+</div>
 <style>
   .container-main {
-    @apply fixed max-w-[50%] right-2 w-full self-start flex flex-col rounded-xl shadow-xl overflow-clip;
-    transform: translate(0%, 60%);
+    @apply w-full self-start flex flex-col rounded-xl shadow-xl overflow-clip;
   }
   .main-container {
     @apply flex w-full;
@@ -390,10 +416,7 @@
     @apply flex flex-col gap-2;
   }
   .side-nav {
-    @apply w-max p-4 flex flex-col gap-4;
-  }
-  .side-nav > * {
-    @apply w-max;
+    @apply w-full pl-4 pb-4 relative flex flex-col gap-4 max-w-[160px];
   }
   .sidebar-container {
     @apply flex flex-col gap-2;
@@ -405,10 +428,14 @@
     @apply flex flex-col;
   }
   .sidebar-container-subcontainer-item {
-    @apply border-l-4 pl-4 -ml-4;
+    @apply border-l-4 px-4 py-[4px] -ml-4;
+  }
+  .sidebar-container-subcontainer-item:hover {
+    border-left: 4px solid var(--hover-active-border) !important;
+    background: var(--hover-bg);
   }
   .center-channel-header {
-    @apply pb-4 border-b-2 border-gray-200;
+    @apply pb-4 border-b-2 border-gray-200 flex items-center justify-between;
   }
   .message {
     @apply relative flex items-start gap-4;
@@ -428,9 +455,11 @@
   .message-sender {
     @apply font-bold;
   }
+  .copy-theme {
+    @apply grid gap-4 w-full;
+  }
   textarea {
-    @apply border-[2px] border-slate-900 rounded-lg bg-slate-100 p-4 min-h-[400px]
-    fixed max-w-[50%] w-full right-2 self-start;
+    @apply border-[2px] border-slate-900 w-full rounded-lg bg-slate-100 p-4 min-h-[250px];
   }
   .indicator {
     @apply w-[15px] h-[15px] absolute top-[23px] left-[23px] rounded-full;
@@ -443,5 +472,8 @@
   }
   .sidebar-unread {
     @apply font-semibold;
+  }
+  .right {
+    @apply flex gap-8 flex-col w-full fixed top-4 right-4 w-[70%];
   }
 </style>
