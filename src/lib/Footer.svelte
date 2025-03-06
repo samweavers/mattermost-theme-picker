@@ -13,7 +13,7 @@
       <a href="/contact/" class="hover:underline">Contact</a>
     </div> -->
     <p class="text-lg text-center md:text-right">
-      &copy; {new Date().getFullYear()} Tiny Teeth. All rights reserved.
+      &copy; {new Date().getFullYear()}. All rights reserved.
     </p>
   </div>
 </footer>

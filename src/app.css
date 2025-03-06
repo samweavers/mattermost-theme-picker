@@ -203,3 +203,6 @@ p,
   border-[--color-secondary] bg-[--color-secondary-muted];
 }
 
+textarea {
+  @apply border-[2px] border-slate-900 w-full rounded-lg bg-slate-100 p-4 min-h-[250px];
+}

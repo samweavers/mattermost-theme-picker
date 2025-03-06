@@ -8,7 +8,7 @@
 <div class="min-h-screen flex flex-row gap-8">
   <Nav />
 
-  <main class="grid gap-8 place-items-center container mx-auto p-4">
+  <main class="flex flex-col container mx-auto p-4">
     <slot />
   </main>
 </div>
