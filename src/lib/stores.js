@@ -8,7 +8,6 @@ export const colors = writable({
   sidebarTextHoverBg: '#d1a317',
   sidebarUnreadText: '#ffffff',
   sidebarTeamBarBg: '#141f23',
-  sidebarHeaderBg: '#141f23',
   sidebarHeaderTextColor: '#ffffff',
   sidebarTextActiveBorder: '#d1a317',
   sidebarTextActiveColor: '#d1a31750',
